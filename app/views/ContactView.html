@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app/css/stil.css" />
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href=""
+        ><img src="app/img/WDLogo.png" alt="Missing logo!"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="?page=home">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="?page=contact">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="?page=OTHER">OTHER</a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link" href="?page=about">About</a>
+          </li>
+        </ul>
+        <!-- Button trigger modal SIGN-UP -->
+        <button
+          type="button"
+          class="btn btn-primary mr-2"
+          data-toggle="modal"
+          data-target="#signupModal"
+        >
+          Sign-up
+        </button>
+
+        <!-- Button trigger modal LOGIN -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h1 class="display-3">Welcome!</h1>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row">
+        <main class="col-10">
+          <h1 id="ceva">CONTACT page</h1>
+        </main>
+
+        <aside class="border-left pl-4">
+          <h3>Aside info</h3>
+          <p>sdmfbshfbsh</p>
+        </aside>
+      </div>
+    </div>
+
+    <!-- SIGN-UP Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign-up form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" onsubmit="return checkPass()" action="addUser.php">
+              <div class="form-group">
+                <label for="exampleInputEmail1">User name (max. 12 char.):</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="userName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pass1"
+                  name="userPassword"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password (again):</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pass2"
+                  name="userPassword"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Sign-up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGIN Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="">
+              <div class="form-group">
+                <label for="exampleInputEmail1">User name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="userName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  name="userPassword"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/myJS.js"></script>
+  </body>
+</html>

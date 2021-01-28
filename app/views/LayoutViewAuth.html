@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pTitle}}</title>
+  <!-- Bootstrap 4.5 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="app/assets/css/style.css">
+  </head>
+  <body>
+
+    <!-- Top Bar -->
+<div class="top-bar navbar-dark bg-dark">
+  <div class="container">
+    <div class="col-12 text-right">
+      <a href="tel:+40740677448"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16"><path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/><path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+        0740677448</a>
+    </div>
+  </div>
+</div>
+
+<!-- Account Navigation Bar -->
+<nav class="navbar bg-light navbar-light navbar-expand-lg">
+  <div class="container">
+    <a href="?page=home" class="navbar-brand"><img src="app/assets/img/edax_logo_500px.svg" alt="Logo"></a>
+    <ul class="nav">
+      <li class="nav-item">
+        
+        <a href="?page=user" class="nav-link">
+          <i class="fas fa-user fa-fw" data-fa-transform="grow-10"></i>
+          <span class="d-none d-md-inline">Contul meu</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="?page=checkout" class="nav-link">
+          <i class="fas fa-shopping-cart fa-fw" data-fa-transform="grow-10"></i>
+          <span class="d-none d-md-inline"> Cosul meu</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Products Navigation Bar -->
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <div class="dropdown">
+      <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bars fa-fw"></i>Produse
+      </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="?page=products">Categorie 1</a>
+          <a class="dropdown-item" href="#">Categorie 2</a>
+          <a class="dropdown-item" href="#">Categorie 3</a>
+          <a class="dropdown-item" href="#">Categorie 4</a>
+          <a class="dropdown-item" href="#">Categorie 5</a>
+        </div>
+    </div>
+
+    <form class="form-inline" action="/search" method="get" nonvalidate="true">
+      <input type="text" class="search_input" name="query" placeholder="Caută un produs..." aria-label="Search" autocomplete="off">
+
+      <button class="btn btn-outline-light">
+        <i class="fas fa-search" data-fa-transform="grow-6" aria-hidden="true"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- ========================= SECTION INTRO ========================= -->
+<section class="section-intro padding-y-sm mt-3">
+  <div class="container">
+  
+  <div class="intro-banner-wrap">
+    <img src="app/assets/img/banner_1.jpg" class="img-fluid rounded">
+  </div>
+  
+  </div> <!-- container //  -->
+  </section>
+  <!-- ========================= SECTION INTRO END// ========================= -->
+  
+  
+  <!-- ========================= SECTION FEATURE ========================= -->
+  <section class="section-content padding-y-sm">
+  <div class="container">
+  <article class="card card-body">
+  
+  
+  <div class="row">
+    <div class="col-md-4">	
+      <figure class="item-feature">
+        <span class="text-dark"><i class="fa fa-2x fa-truck"></i></span>
+        <figcaption class="pt-3">
+          <h5 class="title">Livrare rapida</h5>
+          <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore </p>
+        </figcaption>
+      </figure> <!-- iconbox // -->
+    </div><!-- col // -->
+    <div class="col-md-4">
+      <figure  class="item-feature">
+        <span class="text-dark"><i class="fa fa-2x fa-landmark"></i></span>	
+        <figcaption class="pt-3">
+          <h5 class="title">Profesionalism</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           </p>
+        </figcaption>
+      </figure> <!-- iconbox // -->
+    </div><!-- col // -->
+      <div class="col-md-4">
+      <figure  class="item-feature">
+        <span class="text-dark"><i class="fas fa-2x fa-lock"></i></span>
+        <figcaption class="pt-3">
+          <h5 class="title">Incredere </h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           </p>
+        </figcaption>
+      </figure> <!-- iconbox // -->
+    </div> <!-- col // -->
+  </div>
+  </article>
+  
+  </div> <!-- container .//  -->
+  </section>
+  <!-- ========================= SECTION FEATURE END// ========================= -->
+  
+  
+  <!-- ========================= SECTION CONTENT ========================= -->
+  <section class="section-content">
+  <div class="container">
+  
+  <header class="section-heading">
+    <h3 class="section-title">Produse populare</h3>
+  </header><!-- sect-heading -->
+  
+    
+  <div class="row">
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/1.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/2.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/3.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/4.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+  </div> <!-- row.// -->
+  
+  </div> <!-- container .//  -->
+  </section>
+  <!-- ========================= SECTION CONTENT END// ========================= -->
+  
+  
+  
+  <!-- ========================= SECTION CONTENT ========================= -->
+  <section class="section-content">
+  <div class="container">
+  
+  <header class="section-heading">
+    <h3 class="section-title">Produse noi</h3>
+  </header><!-- sect-heading -->
+  
+  <div class="row">
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/5.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/6.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/7.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/9.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          
+          <div class="rating-wrap">
+            <ul class="rating-stars">
+              <li style="width:80%" class="stars-active"> 
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+              </li>
+              <li>
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> 
+              </li>
+            </ul>
+          </div>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+  </div> <!-- row.// -->
+  
+  </div> <!-- container .//  -->
+  </section>
+  <!-- ========================= SECTION CONTENT END// ========================= -->
+  
+  
+  
+  <!-- ========================= SECTION CONTENT ========================= -->
+  <section class="section-content padding-bottom-sm">
+  <div class="container">
+  
+  <header class="section-heading">
+    <a href="#" class="btn btn-outline-primary float-right">Vezi toate produsele</a>
+    <h3 class="section-title">Recomandate</h3>
+  </header><!-- sect-heading -->
+  
+  <div class="row">
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/1.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/2.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/3.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Nume produs</a>
+          <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+    <div class="col-md-3">
+      <div href="#" class="card card-product-grid">
+        <a href="#" class="img-wrap"> <img src="images/items/4.jpg"> </a>
+        <figcaption class="info-wrap">
+          <a href="#" class="title">Just another product name</a>
+          <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
+        </figcaption>
+      </div>
+    </div> <!-- col.// -->
+  </div> <!-- row.// -->
+  
+  </div> <!-- container .//  -->
+  </section>
+  <!-- ========================= SECTION CONTENT END// ========================= -->
+  
+  <!-- ========================= SECTION  ========================= -->
+  <section class="section-name bg padding-y-sm">
+  <div class="container">
+  <header class="section-heading">
+    <h3 class="section-title">Branduri</h3>
+  </header><!-- sect-heading -->
+  
+  <div class="row">
+    <div class="col-md-3 col-6">
+      <figure class="box item-logo">
+        <a href="#"><img src="app/assets/img/daxer_logo.png"></a>
+        <figcaption class="border-top pt-2">36 Products</figcaption>
+      </figure> <!-- item-logo.// -->
+    </div> <!-- col.// -->
+    <div class="col-md-3  col-6">
+      <figure class="box item-logo">
+        <a href="#"><img src="app/assets/img/evercoat_logo.png"></a>
+        <figcaption class="border-top pt-2">980 Products</figcaption>
+      </figure> <!-- item-logo.// -->
+    </div> <!-- col.// -->
+    <div class="col-md-3  col-6">
+      <figure class="box item-logo">
+        <a href="#"><img src="app/assets/img/u_pol_logo.png"></a>
+        <figcaption class="border-top pt-2">25 Products</figcaption>
+      </figure> <!-- item-logo.// -->
+    </div> <!-- col.// -->
+    <div class="col-md-3  col-6">
+      <figure class="box item-logo">
+        <a href="#"><img src="app/assets/img/3d_logo.png"></a>
+        <figcaption class="border-top pt-2">72 Products</figcaption>
+      </figure> <!-- item-logo.// -->
+    </div> <!-- col.// -->
+  </div> <!-- row.// -->
+  </div><!-- container // -->
+  </section>
+  <!-- ========================= SECTION  END// ========================= -->
+  
+
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2020-2021 EDAX System</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Confidentialitate</a></li>
+      <li class="list-inline-item"><a href="#">Termeni</a></li>
+      <li class="list-inline-item"><a href="#">Suport</a></li>
+    </ul>
+  </footer>
+  
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="app/assets/js/myJS.js"></script>
+  <script src="app/assets/js/all.min.js"></script>
+</body>
+</html>

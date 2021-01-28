@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{pTitle}}</title>
+  <link rel="shortcut icon" href="app/img/favicon.ico">
+  <!-- Bootstrap 4.5 CSS -->
+  <link rel="stylesheet" href="app/assets/css/bootstrap.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="app/assets/css/style.css">
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Detalii comanda</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Cosul meu</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Denumire produs</h6>
+              <small class="text-muted">Descriere produs</small>
+            </div>
+            <span class="text-muted">12 Lei</span>
+          </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Denumire produs</h6>
+                <small class="text-muted">Descriere produs</small>
+              </div>
+              <span class="text-muted">8 Lei</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Denumire produs</h6>
+                <small class="text-muted">Descriere produs</small>
+              </div>
+              <span class="text-muted">5 Lei</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total</span>
+              <strong>20 Lei</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Cod promo">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Aplica</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Adresa de livrare</h4>
+          <form class="needs-validation" novalidate>
+
+              <div class="mb-3">
+                <label for="name">Nume si Prenume</label>
+                <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Va rugam introduceti numele complet.
+                </div>
+              </div>
+              
+
+            <div class="mb-3">
+              <label for="phone">Telefon</label>
+              <input type="tel" class="form-control" id="phone" placeholder="" pattern="[0-9]{10}" required>
+              <div class="invalid-feedback">
+                Va rugam introduceti numarul de telefon.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Adresa</label>
+              <input type="text" class="form-control" id="address" placeholder="" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="state">Judet</label>
+                <select class="custom-select d-block w-100" id="judet" required>
+                  <option value="">Selecteaza...</option>
+                  <option>Alba</option>
+                  <option>Arad</option>
+                  <option>Arges</option>
+                  <option>Bacău</option>
+                  <option>Bihor</option>
+                  <option>Bistriţa-Năsăud</option>
+                  <option>Botoşani</option>
+                  <option>Braşov</option>
+                  <option>Brăila</option>
+                  <option>Buzău</option>
+                  <option>Caraş-Severin</option>
+                  <option>Călăraşi</option>
+                  <option>Cluj</option>
+                  <option>Constanţa</option>
+                  <option>Covasna</option>
+                  <option>Dâmboviţa</option>
+                  <option>Dolj</option>
+                  <option>Galaţi</option>
+                  <option>Giurgiu</option>
+                  <option>Gorj</option>
+                  <option>Harghita</option>
+                  <option>Hunedoara</option>
+                  <option>Ialomiţa</option>
+                  <option>Iaşi</option>
+                  <option>Ilfov</option>
+                  <option>Maramureş</option>
+                  <option>Mehedinţi</option>
+                  <option>Mureş</option>
+                  <option>Neamţ</option>
+                  <option>Olt</option>
+                  <option>Prahova</option>
+                  <option>Satu Mare</option>
+                  <option>Sălaj</option>
+                  <option>Sibiu</option>
+                  <option>Suceava</option>
+                  <option>Teleorman</option>
+                  <option>Timiş</option>
+                  <option>Tulcea</option>
+                  <option>Vaslui</option>
+                  <option>Vâlcea</option>
+                  <option>Vrancea</option>
+                </select>
+                <div class="invalid-feedback">
+                  Va rugam sa selectati un judet.
+                </div>
+              </div>
+
+              <div class="col-md-5 mb-3">
+                <label for="country">Localitatea</label>
+                <select class="custom-select d-block w-100" id="tara" required>
+                  <option value="">Selecteaza...</option>
+                  <option></option>
+                </select>
+                <div class="invalid-feedback">
+                  Va rugam să selectati o localitate.
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label for="zip">Codul Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  Va rugam sa introduceti un cod zip.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">Datele de facturare sunt aceleași cu adresa de livrare</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Modalitate de plată</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="credit">Card de credit</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Card de debit</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Numele complet</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Numele așa cum este pe card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Numărul cardului de credit</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Data expirării</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-dark btn-lg btn-block" type="submit">Plasează comanda</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020-2021 EDAX System</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Confidentialitate</a></li>
+          <li class="list-inline-item"><a href="#">Termeni</a></li>
+          <li class="list-inline-item"><a href="#">Suport</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
