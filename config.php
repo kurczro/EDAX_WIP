@@ -1,6 +1,5 @@
 <?php
 
-// constante folosite in intreg site-ul
 define('APP_PATH', 'app/');
 define('MODELS', 'models/');
 define('VIEWS', 'views/');
@@ -26,3 +25,5 @@ spl_autoload_register(function($className){
     }
     else die('File NOT found!');
 });
+
+?>

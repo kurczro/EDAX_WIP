@@ -7,7 +7,7 @@ class AboutController extends AppController
     }
     public function init(){
         // echo __CLASS__;
-        $data['pTitle'] = 'Edax System';
+        $data['pTitle'] = 'EDAX System';
         session_start();
         if(isset($_SESSION['authOK'])){
             $data['userAuth'] .= ', '.$_SESSION['authOK'].'!';
@@ -15,3 +15,5 @@ class AboutController extends AppController
         } else echo $this->render(APP_PATH.VIEWS."LayoutView.html", $data);
     }
 }
+
+?>

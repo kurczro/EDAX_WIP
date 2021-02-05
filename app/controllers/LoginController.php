@@ -7,7 +7,7 @@ class LoginController extends AppController
     }
 
     public function init(){
-        $data['pTitle'] = 'Edax System';
+        $data['pTitle'] = 'EDAX System';
 
         if(isset($_REQUEST['user_name_form'])){
             $userName = $_REQUEST['user_name_form'];
@@ -17,11 +17,8 @@ class LoginController extends AppController
             if($newUser->checkUser($userName,$userPass)){
                 session_start();
                 $_SESSION['authOK'] = $userName;
-
                 echo $this->render(APP_PATH.VIEWS."LayoutViewAuth.html", $data);
-
             }else echo $this->render(APP_PATH.VIEWS."LoginView.html", $data);
-            
         }else echo $this->render(APP_PATH.VIEWS."LoginView.html", $data);
     }
 }

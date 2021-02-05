@@ -4,3 +4,4 @@ require_once 'config.php';
 
 new AppController;
 
+?>

@@ -7,7 +7,7 @@ class ContactController extends AppController
     }
     public function init(){
         // echo __CLASS__;
-        $data['pTitle'] = 'Edax System';
+        $data['pTitle'] = 'EDAX System';
         $data['userAuth'] = "Salut";
         session_start();
         if(isset($_SESSION['authOK'])){
@@ -19,3 +19,5 @@ class ContactController extends AppController
         } else echo $this->render(APP_PATH.VIEWS."LayoutView.html", $data);
     }
 }
+
+?>

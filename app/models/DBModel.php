@@ -17,3 +17,5 @@ class DBModel
 			return $this->conn;
 		} 
 }
+
+?>

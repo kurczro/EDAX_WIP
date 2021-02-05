@@ -6,7 +6,7 @@ class ProductsController extends AppController
         $this->init();
     }
     public function init(){
-        $data['pTitle'] = 'Edax System';
+        $data['pTitle'] = 'EDAX System';
         $data['userAuth'] = "";
         session_start();
         if(isset($_SESSION['authOK'])){
@@ -16,3 +16,5 @@ class ProductsController extends AppController
         } else echo $this->render(APP_PATH.VIEWS."ProductsView.html", $data);
     }
 }
+
+?>

@@ -81,3 +81,5 @@ class UsersModel extends DBModel
         $myPrep->close();
     }
 }
+
+?>

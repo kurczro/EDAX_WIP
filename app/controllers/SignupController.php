@@ -7,7 +7,7 @@ class SignupController extends AppController
     }
     public function init(){
 
-    $data['pTitle'] = 'Edax System';
+    $data['pTitle'] = 'EDAX System';
     
     if(isset($_REQUEST['user_name_form'])){
         $userName = $_REQUEST['user_name_form'];
@@ -18,3 +18,5 @@ class SignupController extends AppController
         } else echo $this->render(APP_PATH.VIEWS."SignupView.html", $data);
     }
 }
+
+?>

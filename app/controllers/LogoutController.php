@@ -6,10 +6,13 @@ class LogoutController extends AppController
         $this->init();
     }
     public function init(){
+        $data['pTitle'] = 'EDAX System';
         session_start();
 
         $_SESSION = array();
         session_destroy();
-        header('Location: ?page=home');
+        echo $this->render(APP_PATH.VIEWS."LayoutViewAuth.html", $data);
     }
 }
+
+?>

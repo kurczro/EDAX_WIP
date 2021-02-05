@@ -15,3 +15,5 @@ class CheckoutController extends AppController
         } else echo $this->render(APP_PATH.VIEWS."CheckoutView.html", $data);
     }
 }
+
+?>
